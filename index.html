@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+         
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>The Hair Wizard Barber Shop</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  
+      
+      <script>
+        $('.menu a').click(function(){
+            $(".menu").hide();
+        });
+
+          /* Clicks within the dropdown won't make
+            it past the dropdown itself */
+          $(".menu").click(function(e){
+            e.stopPropagation();
+          });
+      </script>
+      
+    <!--  
+    <script type="text/javascript">
+        
+    $(document).ready(function() {
+	   $(window).scroll(function() {
+  	        if($(document).scrollTop() > 200) {
+    	       $('.nav').addClass('shrink');
+            }
+            else {
+                $('.nav').removeClass('shrink');
+            }
+        });
+    });  
+        
+    </script> --> 
+        
+        
+  </head>
+  <body>
+    <header>
+        <a href="#home" class=" scroll logo-link">
+        <div class="logo">
+        </div>
+        </a>
+
+      <nav>
+          <li><a href="#home" class="scroll active ">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="#services" class="scroll">Services</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+          <li><a href="#" class="scroll appointment">Make an appointment</a></li>
+      </nav>
+    
+      <!--Responsive nav -->    
+      <div class="nav">
+
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+        
+          <div class="menu">
+              <a href="#home" class="scroll active ">Home</a>
+              <a href="#about" class="scroll">About</a>
+              <a href="#services" class="scroll">Services</a>
+              <a href="#contact" class="scroll">Contact</a>
+              <a href="#contact" class="scroll">Make an appointment</a>
+          </div>
+
+      </div> <!--Responsive nav -->  
+        
+    </header>
+      
+    <section id="home">
+        <div class="banner-text">
+            <h1>A hair salon for men</h1>
+            <h2>&#126;&nbsp; Since 1995 &nbsp;&#126;</h2>
+        </div>
+        <div class="overlay"></div>
+    </section>
+      
+    <section id="about">
+        <div class="about-overlay"></div>
+        <div class="about-area">
+            <div class="about-text">
+                <h1 class="heading-text">About Us</h1>
+            </div>
+            <div class="about-container">
+                    
+                <div class="img-container"></div>
+                <div class="desc-container">
+                <h1>
+                    Your perfect new style
+                </h1>
+                <p>
+                    Our services spectrum encompasses many techniques and procedures – from straight razor shaving and hairstyling to beard care and eyebrow grooming. At our place, you have a chance to have your precious hair taken care of, sipping premium whisky and listening to nice music.
+                    <br><br>
+                    We run a men’s barbershop in its best traditions. Our guys will help you look
+                    sharp and stylish.
+                </p>
+                <button><i class="fa fa-play" aria-hidden="true"></i> Watch how we work</button>
+                </div>
+                </div>
+        </div>
+        
+    </section>
+      
+    <section id="services">
+        
+        <div class="service-area">
+            <div class="service-text">
+                <h1 class="heading-text">Services</h1>
+            </div>
+            <div class="grid-wrap">
+                <div class="grid-box">
+                    <li class="service-li">Haircut<span>&#36;15</span></li>
+                    <li class="service-li">Children haircut &#40;under 13&#41;<span>&#36;10</span></li>
+                    <li class="service-li">Razor cut<span>&#36;5</span></li>
+                    <li class="service-li">Face Shave<span>&#36;8</span></li>
+                    <li class="service-li">Neck shave<span>&#36;5</span></li>
+                    <li class="service-li">Whole head shave<span>&#36;15</span></li>
+                </div>
+                <div class="grid-box">
+                    <li class="service-li">Head top shave<span>&#36;10</span></li>
+                    <li class="service-li">Beard trim<span>&#36;12</span></li>
+                    <li class="service-li">Singe<span>&#36;4</span></li>
+                    <li class="service-li">Tonic hair dressing or oils<span>&#36;3</span></li>
+                    <li class="service-li">face massage<span>&#36;10</span></li>
+                    <li class="service-li">Head or neck massage<span>&#36;15</span></li>
+                </div>
+            </div>
+        </div>
+        
+    </section> 
+      
+     <section id="contact">
+
+        <div class="contact-area">
+            
+        <div class="contact-text"><h1 class="heading-text">Contact Us</h1></div>
+            
+            <div class="grid-container">
+          
+            <div class="center-grid">
+                <div class="left-container">
+                    <div class="left">
+                  <p class="contact-desc">
+                            Feel free to give us a call or send us an email with any questions or comments you have. We would love to hear from you, whether you're interested in knowing about our services or 
+                            working with our team.
+                        </p>
+                        <h1 class="title">Location</h1>
+                        <p class="contact-desc">
+                            123 , Fake Street , New York , NY , 12345
+                        </p>
+                        <h1 class="title signup">Subscribe</h1>
+                        <p class="contact-desc signup">
+                            Subscribe to our newsletter to stay updated
+                        </p>
+
+                        <div class="subscribe-form">
+                            <form>
+                                <input type="email" placeholder="Email Address" required><button type="submit">Sign Up</button>
+                            </form>
+                        </div>
+              </div>
+                </div>
+                <div class="right-container">
+                    <div class="right">
+                  <form class="message-form">
+                            <div class="form-wrap">
+ 
+                            <div class="name-wrap">    
+                                <input class="name" type="text" placeholder="Name" required>
+                            </div>
+                            <div class="email-wrap">    
+                                <input class="email" type="email" placeholder="Email Address" required>
+                            </div>
+                                
+                            <div class="msg-wrap">
+                                <textarea placeholder="Your message" maxlength="100"></textarea> 
+                            </div> 
+                            <div class="msg-button">    
+                                <button type="submit">Submit</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                <div class="hours-section">
+                    <h1 class="title">Hours</h1>
+                    <div class="time-table">
+                        <li class="time-li">Sunday <span> 9am &#45; 6pm</span></li>
+                        <li class="time-li">Tuesday <span> 9am &#45; 6pm</span></li>
+                        <li class="time-li">Thursday <span> 9am &#45; 6pm</span></li>
+                        <li class="time-li">Friday <span> 11am &#45; 4pm</span></li>
+                        <li class="time-li">Saturday <span> 9am &#45; 6pm</span></li>
+                    </div>
+                </div>
+                <div class="social">
+                        
+                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
+                        
+                    </div> 
+                    
+                    <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i> <a class="call" href="tel:321-456-7890" >&#40; 321 &#41; &#45; 456 &#45; 7890</a></li>
+                    
+        </div>
+            
+        </div>
+    </section>
+      
+    <footer>
+        <h1>&copy; 2018 The Hair Wizard &nbsp; &#124; &nbsp; All Rights Reserved &nbsp; &#124; &nbsp; Designed by <a href="#" alt="AnupsDesign" title="http://anupsdesign.github.io/"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a></h1>  
+    </footer>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+	   $(window).scroll(function() {
+  	        if($(document).scrollTop() > 200) {
+    	       $('header').addClass('shrink');
+            }
+            else {
+                $('header').removeClass('shrink');
+            }
+        });
+    });  
+    </script>  
+    <script type="text/javascript">
+        
+        $(document).ready(function() { // once the whole page is ready we want to do a function
+  
+        var scrollLink = $('.scroll');
+        var headerHeight = $('header').outerHeight();
+        
+        // For smooth scrolling
+        scrollLink.click(function(e) { // when we click on scrolllink we want a function to happen, and the e stands for event, here an event happens when we click
+            e.preventDefault();//preventing the default action of .scroll which is a class for the links. The default action here is jumping down to the respective section 
+            $('body,html').animate({
+            scrollTop: $(this.hash).offset().top - headerHeight
+            //scroll top looks for the location of the scroll bar
+            //$(this.has) == this id or this section    
+            }, 500 );
+        });
+  
+        // For active link switching
+        $(window).scroll(function() { //all of this is only going to happen when the window is scrolling    
+        
+            var scrollbarLocation = $(this).scrollTop();
+    
+            scrollLink.each(function() { //for each scrolling
+                
+            var sectionOffset = $(this.hash).offset().top - headerHeight - 400;
+      
+            if ( sectionOffset <= scrollbarLocation ) {
+                $( ".active:nth-child(1)" ).removeClass( "active" );
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+            }
+            })
+        })
+        })
+        
+    </script> 
+  </body>
+</html>
