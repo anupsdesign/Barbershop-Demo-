@@ -1052,9 +1052,6 @@ footer{
         text-align: center;
         font-size: .8em;
     }
-    footer{
-        display: none;
-    }
 }
 @media only screen and (min-width:590px) and (max-height:375px){
     .banner-text h1{
